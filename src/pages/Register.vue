@@ -9,9 +9,9 @@ import Form from '../components/Form.vue'
 
 <template>
     <div class="bg-cyan-950 h-screen w-screen flex justify-center items-center">  
-        <div class="bg-neutral-300 flex-col justify-center items-center">
+        <div class="bg-neutral-300 flex flex-col justify-around items-center px-10 py-20 h-3/4">
         <Title :title="'REGÍSTRATE'"/>
-        <Form :sendMessage="'Registrarse'" type="register"/>
+        <Form :sendMessage="'REGISTRARSE'" type="register"/>
         <RedirectMessage :location="'/'" linkText="Iniciar sesión" message="¿Ya tienes cuenta?"/>
         </div>
     </div>

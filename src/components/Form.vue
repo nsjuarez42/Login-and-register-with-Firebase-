@@ -42,7 +42,7 @@ const onSubmit = (e)=>{
         .catch(error=>{
             const {code,message} = error
             console.log(message,code)
-            toast.error("Erro al hacer login")
+            toast.error("Error al hacer login")
         })
     }
 }
@@ -51,7 +51,7 @@ const onSubmit = (e)=>{
 
 <template>
     <Toaster/>
-     <form @submit.prevent="onSubmit" prevn>
+     <form class="flex-col flex justify-between items-start border-solid border-black h-3/4 w-full" @submit.prevent="onSubmit" prevn>
             <Input :type="'mail'" :placeholder="'Correo electrónico'"/>
             <Input :type="'password'" :placeholder="'Contraseña'"/>
             <Input :type="'submit'" :placeholder="sendMessage"/>

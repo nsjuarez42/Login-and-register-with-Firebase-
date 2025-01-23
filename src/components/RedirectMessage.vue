@@ -8,9 +8,9 @@ const props = defineProps({
 
 <template>
     <div>
-        <span>
+        <span class="font-normal">
             {{message}}
-            <RouterLink :to="location">{{linkText}}</RouterLink>
+            <RouterLink :to="location" class="text-cyan-600 underline decoration-solid m-2">{{linkText}}</RouterLink>
         </span>
     </div>
 </template>
